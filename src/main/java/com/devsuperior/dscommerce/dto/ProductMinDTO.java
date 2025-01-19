@@ -1,10 +1,5 @@
 package com.devsuperior.dscommerce.dto;
-
 import com.devsuperior.dscommerce.entities.Product;
-
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Positive;
-import jakarta.validation.constraints.Size;
 
 public class ProductMinDTO {
     private Long id;

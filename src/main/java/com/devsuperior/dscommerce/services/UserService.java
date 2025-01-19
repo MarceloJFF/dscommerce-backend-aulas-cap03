@@ -1,10 +1,7 @@
 package com.devsuperior.dscommerce.services;
 
 import java.util.List;
-import java.util.Optional;
-
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.repository.Repository;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -49,7 +46,6 @@ public class UserService implements UserDetailsService {
             String username = jwtPrincipal.getClaim("username");
             return repository.findByEmail(username).get();
         } catch (Exception e) {
-            // TODO: handle exception
             throw new UsernameNotFoundException("Usuario nao encontrado");
         }
         

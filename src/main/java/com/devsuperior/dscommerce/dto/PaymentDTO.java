@@ -1,12 +1,6 @@
 package com.devsuperior.dscommerce.dto;
-
 import java.time.Instant;
-
 import com.devsuperior.dscommerce.entities.Payment;
-
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
 
 public class PaymentDTO {
     private Long id;
